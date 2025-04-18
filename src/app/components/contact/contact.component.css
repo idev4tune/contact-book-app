@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.input {
+    width: 500px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.button-large {
+    width: 500px;
+}

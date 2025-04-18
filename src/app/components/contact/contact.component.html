@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <mat-icon class="icon">import_contacts</mat-icon>
+    Contacts
+</mat-toolbar>
+<div class="container">
+    <form [formGroup]="formGroup" (ngSubmit)="save()">
+        <div>
+            <mat-form-field class="input" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input formControlName="name" matInput placeholder="Full Name" [(value)]="contact.name">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="input" appearance="outline">
+                <mat-label>Email Address</mat-label>
+                <input formControlName="email" matInput placeholder="Email Address" [(value)]="contact.email">
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+        </div>
+        <div>            
+            <button class="button-large" mat-raised-button color="primary">Save this Contact</button>
+        </div>
+    </form>
+</div>
